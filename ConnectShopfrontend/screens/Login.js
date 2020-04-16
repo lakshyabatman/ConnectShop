@@ -24,7 +24,7 @@ export default Login = ({navigation}) => {
             </View>
           </Form>
         </View>
-        <Image source={require('../assets/login-asset/bottomIcon.png')} />
+        <Image source={require('../assets/login-asset/bottomIcon.png')} style={{position:'absolute',bottom:0}}/>
       </Container>
     );
   }

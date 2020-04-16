@@ -38,7 +38,11 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.wrapper}>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator
+        screenOptions={{
+          headerShown: false
+        }}
+        >
           <Stack.Screen name="Get Started" component={GetStarted} />
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Signup" component={Signup} />
