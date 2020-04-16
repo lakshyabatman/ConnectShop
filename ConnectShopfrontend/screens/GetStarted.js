@@ -1,6 +1,6 @@
 import React from 'react';
 import FadeInView from '../components/AnimatedFragment'
-
+import ConnectShopButton from '../components/connectshop-btn'
 import {
   StyleSheet,
   View,
@@ -21,11 +21,7 @@ const GetStarted= ({navigation}) => {
             Online platform where user and retailers can connect at the time of crisis.
             </Text>
           </FadeInView>
-            <View style={styles.button}>
-              <Button title="Get Started" 
-              onPress= {()=> navigation.navigate('Login')}
-              />
-            </View>
+            <ConnectShopButton title="Get Started" onPress={() => navigation.navigate("Login")} />
         </View>
         <Image source={require('../assets/splash-screen-asset/1x.png')} />
       </>
@@ -46,20 +42,6 @@ const styles = StyleSheet.create({
   mainHeading : {
     fontSize:36,
     marginBottom:10
-  },
-  button : {
-    marginTop:30,
-    padding:5,
-    color:'white',
-    width: 200,
-    backgroundColor:'#2A358F',
-    shadowColor: "rgba(0, 0, 0, 0.25)",
-    shadowRadius:8,
-    shadowOffset:{
-      width:0,
-      height:4
-    },
-    borderRadius: 10
   }
 });
 
