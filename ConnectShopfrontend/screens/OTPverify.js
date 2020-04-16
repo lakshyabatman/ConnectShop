@@ -7,7 +7,7 @@ import {
     Button,
   } from 'react-native';
 
-  export default Login = ({navigation}) => {
+  export default OTPVerify = ({navigation}) => {
       return (
           <View>
               <Text>HII</Text>
